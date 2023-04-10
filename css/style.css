@@ -190,7 +190,8 @@ ul li {
     text-shadow: 0 0 3px white;
   }
   .download {
-    left: 80%;
+    width: 30px;
+    right: 5px;
     position: fixed;
   }
 }
