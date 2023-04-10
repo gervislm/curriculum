@@ -156,7 +156,8 @@ ul li {
   }
   .download {
     position: relative;
-    left: 80%;
+    top: 15px;
+    left: 85%;
   }
 }
 
@@ -189,14 +190,15 @@ ul li {
     color: rgb(127, 155, 218);
     text-shadow: 0 0 3px white;
   }
-  .download {
-    width: 30px;
-    right: 5px;
+  .download img {
+    width: 50px;
+    top: 10px;
+    right: 60px;
     position: fixed;
   }
 }
 
-@media print {
+/* @media print {
   .container {
     margin: 0;
     padding: 0;
@@ -232,7 +234,7 @@ ul li {
   .no-print {
     display: none;
   }
-}
+} */
 
 @page {
   margin: 5px;
