@@ -1,23 +1,23 @@
 (() => {
   //choose el button
   const button = document.querySelector("#pdfBtn");
-  const resumeHtml = document.querySelector("body");
+  const resumeHtml = document.querySelector(".container");
   function generatePDF() {
     html2pdf()
       .set({
         margin: 0,
+        unit: "in",
+        height: "11.69",
         filename: "gervis_resume.pdf",
         image: {
           type: "jpeg",
           quality: 3,
         },
         html2canvas: {
-          scale: 3, // A mayor escala, mejores gráficos, pero más peso
+          scale: 3,
           letterRendering: true,
         },
         jsPDF: {
-          unit: "in",
-          format: "a3",
           orientation: "portrait", // landscape o portrait
         },
       })

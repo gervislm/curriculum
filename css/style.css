@@ -5,11 +5,15 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+body {
+  padding: 0 20%;
+  margin-top: 10px;
+}
+
 .container {
   position: relative;
   display: flex;
-  padding: 0 20%;
-  margin-top: 50px;
+  /* height: 296.86mm; */
 }
 
 aside {
@@ -46,7 +50,7 @@ a {
 }
 
 .margin-title {
-  margin: 60px 0;
+  margin: 51.14px 0;
 }
 
 h3 {
@@ -137,12 +141,16 @@ ul li {
   position: absolute;
   width: 80px;
   top: 0px;
-  right: 150px;
+  right: -150px;
   color: gray;
 }
 
 .download img:hover {
-  transform: scale(150%);
+  transform: scale(120%);
+}
+
+.download img:active {
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1300px) {
@@ -157,7 +165,7 @@ ul li {
   .download {
     position: relative;
     top: 15px;
-    left: 85%;
+    left: 70%;
   }
 }
 
